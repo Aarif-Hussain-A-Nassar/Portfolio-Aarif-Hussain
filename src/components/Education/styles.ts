@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 2rem;
+  padding: 3rem; /* increased padding */
   background: transparent;
 
   h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    margin-bottom: 3rem; /* more spacing */
+    font-size: 3rem; /* larger section heading */
     font-weight: bold;
     color: inherit;
   }
@@ -15,14 +15,14 @@ export const Container = styled.section`
   .education-list {
     display: flex;
     flex-direction: column; /* stack vertically */
-    gap: 2rem;
+    gap: 3rem; /* more gap */
     align-items: center;
     width: 100%;
   }
 
   .education-card {
     background: var(--card-bg, white);
-    padding: 2rem;
+    padding: 3rem; /* bigger padding */
     border-radius: 12px;
 
     width: 90vw; /* Fill 90% of viewport width */
@@ -37,29 +37,30 @@ export const Container = styled.section`
   }
 
   .year {
-    font-size: 1.1rem;
+    font-size: 1.5rem; /* larger year text */
     font-weight: bold;
     color: var(--green);
   }
 
   .body {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 
     h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.3rem;
+      font-size: 2rem; /* larger degree heading */
+      margin-bottom: 0.5rem;
       color: inherit;
       transition: color 0.5s;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.4rem; /* larger paragraph text */
       color: var(--text-secondary, #555);
       transition: color 0.5s;
     }
 
     strong {
       color: inherit;
+      font-size: 1.5rem; /* larger strong text */
     }
   }
 

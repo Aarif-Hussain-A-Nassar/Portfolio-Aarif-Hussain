@@ -19,6 +19,7 @@ import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import { Skills } from "../Skills/Skills";
 import { Education } from "../Education/Education";
+import { Experience } from "../Experience/Experience";
 
 export function Main() {
   return (
@@ -268,6 +269,7 @@ export function Main() {
       <About></About>
       <Skills></Skills>
       <Education></Education>
+      <Experience></Experience>
       <Project></Project>
       <Contact></Contact>
     </Container>

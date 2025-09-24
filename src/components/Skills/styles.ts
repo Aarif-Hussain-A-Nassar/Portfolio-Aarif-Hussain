@@ -1,0 +1,61 @@
+import styled from "styled-components";
+
+export const Container = styled.section`
+  padding: 4rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem; /* Increased spacing */
+    /* Removed fixed color so it inherits from global theme */
+  }
+
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .marquee-content {
+    display: flex;
+    gap: 5rem; /* Increased spacing between skills */
+    animation: marquee 10s linear infinite;
+    align-items: center;
+    padding: 0 2rem; /* Extra padding on sides */
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping so marquee works */
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+
+  .skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill p {
+    font-size: 1rem;
+    margin: 0;
+    /* Removed fixed color so it inherits from global theme */
+  }
+`;

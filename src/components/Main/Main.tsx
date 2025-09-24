@@ -18,6 +18,7 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import { Skills } from "../Skills/Skills";
+import { Education } from "../Education/Education";
 
 export function Main() {
   return (
@@ -266,6 +267,7 @@ export function Main() {
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
+      <Education></Education>
       <Project></Project>
       <Contact></Contact>
     </Container>

@@ -56,6 +56,24 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  :root {
+  --heading-color: #fff; /* default dark mode */
+  --card-bg: #1a1a1a;
+  --text-secondary: #ccc;
+}
+
+&.light {
+  --heading-color: var(--black);
+  --card-bg: #ffffff;
+  --text-secondary: #555;
+}
+
+&.dark {
+  --heading-color: #ffffff;
+  --card-bg: #121212;
+  --text-secondary: #ccc;
+}
+
   ul, li {
     text-decoration: none;
     list-style: none;
@@ -115,4 +133,4 @@ export const GlobalStyle = createGlobalStyle`
     //   color: var(--green);
     // }
   }
-`
+`;

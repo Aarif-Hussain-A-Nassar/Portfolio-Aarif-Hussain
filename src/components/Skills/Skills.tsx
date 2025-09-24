@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 import python from "../../assets/python.svg";
 import java from "../../assets/java.svg";
@@ -37,23 +38,20 @@ export function Skills() {
   return (
     <Container id="skills">
       <h2>Skills</h2>
-      <div className="marquee">
-        <div className="marquee-content">
-          {skills.map((skill: Skill, index: number) => (
-            <div className="skill" key={index}>
-              <img src={skill.src} alt={skill.alt} />
-              <p>{skill.alt}</p>
-            </div>
-          ))}
-          {/* Duplicate for smooth looping */}
-          {skills.map((skill: Skill, index: number) => (
-            <div className="skill" key={index + skills.length}>
-              <img src={skill.src} alt={skill.alt} />
-              <p>{skill.alt}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Marquee
+        gradient={false}   // remove edge fade
+        speed={60}         // adjust speed (lower = slower)
+        pauseOnHover={true}
+        pauseOnClick={true}
+        autoFill={true}
+      >
+        {skills.map((skill: Skill, index: number) => (
+          <div className="skill" key={index}>
+            <img src={skill.src} alt={skill.alt} />
+            <p>{skill.alt}</p>
+          </div>
+        ))}
+      </Marquee>
     </Container>
   );
 }

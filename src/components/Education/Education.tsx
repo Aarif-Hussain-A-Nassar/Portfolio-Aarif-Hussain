@@ -17,18 +17,18 @@ export function Education(): JSX.Element {
     {
       year: "2016–2017",
       degree: "Tenth Standard",
-      institution: "Fathima Girls High School",
+      institution: "T D High School,Thuravoor",
     },
     {
       year: "2017–2019",
       degree: "Higher Secondary Education (Computer Science)",
-      institution: "St Teresa School",
+      institution: "T D Higher Secondary School, Thuravoor",
     },
     {
       year: "2019–2023",
       degree: "Bachelor of Technology",
-      institution: "Toc H Institute of Science & Technology",
-      grade: "CGPA: 8.9",
+      institution: "Toc H Institute of Science & Technology (Computer Science & Engineering)",
+      grade: "CGPA: 8.84",
     },
   ];
 

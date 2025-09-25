@@ -46,12 +46,10 @@ export function Skills() {
     { src: vscode, alt: "VS Code" },
     { src: git, alt: "Git" },
     { src: githubcopilot, alt: "GitHub Copilot" },
-    { src: linux, alt: "Linux" },
-    { src: canva, alt: "Canva" },
+
     // { src: lightroom, alt: "Lightroom" },
     { src: eclipse, alt: "Eclipse" },
-    { src: c, alt: "C" },
-    { src: csharp, alt: "C#" },
+
     { src: mysql, alt: "MySQL" },
     { src: postgresql, alt: "PostgreSQL" },
     // { src: sqlite, alt: "SQLite" },
@@ -61,7 +59,7 @@ export function Skills() {
     { src: typescript, alt: "TypeScript" },
     { src: aws, alt: "AWS" },
     { src: azure, alt: "Azure" },
-    { src: angular, alt: "Angular" },
+
     { src: agile, alt: "Agile" },
     { src: markdown, alt: "Markdown" },
     // { src: python, alt: "Python" },
@@ -73,6 +71,11 @@ export function Skills() {
     { src: htmlIcon, alt: "HTML" },
     { src: cssIcon, alt: "CSS" },
     { src: boostrapIcon, alt: "Bootstrap" },
+    { src: angular, alt: "Angular" },
+    { src: linux, alt: "Linux" },
+    { src: c, alt: "C" },
+    { src: csharp, alt: "C#" },
+    { src: canva, alt: "Canva" },
   ];
 
   return (

@@ -1,17 +1,30 @@
 import { Container } from "./styles";
 import { BrowserRouter as Router } from "react-router-dom";
 import { NavHashLink, HashLink } from "react-router-hash-link";
-import { useState } from "react";
-import Resume from "../../assets/Vinayak_Singh_Resume.pdf";
+import { useState, useEffect } from "react";
+
+
 export function Header() {
   const [isActive, setActive] = useState(false);
+  const [isLight, setIsLight] = useState(true); // ✅ Theme toggle state
+
   function toggleTheme() {
     let html = document.getElementsByTagName("html")[0];
     html.classList.toggle("light");
+    setIsLight(!isLight);
   }
+
+  // ✅ Set light theme by default
+  useEffect(() => {
+    let html = document.getElementsByTagName("html")[0];
+    html.classList.add("light"); // add light mode by default
+    setIsLight(true);
+  }, []);
+
   function closeMenu() {
     setActive(false);
   }
+
   return (
     <Container className="header-fixed">
       <Router>
@@ -19,14 +32,18 @@ export function Header() {
           <span>{"<Aarif Hussain "}</span>
           <span>{" A Nassar/>"}</span>
         </HashLink>
+
+        {/* Toggle checkbox */}
         <input
           onChange={toggleTheme}
           className="container_toggle"
           type="checkbox"
           id="switch"
           name="mode"
+          checked={isLight} // ✅ checkbox checked state
         />
         <label htmlFor="switch">Toggle</label>
+
         <nav className={isActive ? "active" : ""}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home
@@ -49,6 +66,7 @@ export function Header() {
             Resume
           </a>
         </nav>
+
         <div
           aria-expanded={isActive ? "true" : "false"}
           aria-haspopup="true"

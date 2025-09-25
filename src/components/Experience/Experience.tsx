@@ -18,11 +18,31 @@ export function Experience(): JSX.Element {
     {
       company: "Williams Lea",
       role: "Software Engineer",
-      duration: "Nov 2024 - Present · 11 mos",
+      duration: "Nov 2024 - Present ",
       location: "Remote",
       description:
         "Software Engineering Trainee at Williams Lea — diving into software development projects, collaborating with talented professionals, and enhancing my skills in software engineering and problem-solving. Excited to contribute to a company that values innovation and high-quality solutions.",
-      skills: ["React.js", "React Hooks", "+13 skills"],
+      skills: [
+        "React.js",
+        "React Hooks",
+        "Redux Thunk",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Git",
+        "GitHub",
+        "React Query",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Zustand",
+        "Datadog",
+        "SonarQube",
+        "Agile Methodologies",
+        "Jira",
+        "Confluence",
+      ],
     },
     {
       company: "Tata Consultancy Services",
@@ -31,7 +51,7 @@ export function Experience(): JSX.Element {
       location: "Kochi, Kerala, India",
       description:
         "Specialized in system development and maintenance. Collaborated for seamless operations and delivered impactful engineering solutions.",
-      skills: ["React", "React Hooks", "+13 skills"],
+      skills: ["React", "React Hooks", "Java"],
     },
     {
       company: "Tungston Labs",
@@ -40,7 +60,7 @@ export function Experience(): JSX.Element {
       location: "Kochi, Kerala, India",
       description:
         "Worked with a skilled team to empower clients’ marketing objectives, delivering innovative brand strategies and digital solutions.",
-      skills: ["WordPress", "React.js", "+1 skill"],
+      skills: ["WordPress", "React.js", "JavaScript", "HTML5", "CSS3", "Sass"],
     },
     {
       company: "BasketHunt Pvt Ltd",
@@ -49,7 +69,7 @@ export function Experience(): JSX.Element {
       location: "Remote",
       description:
         "Worked on e-commerce expansion into cloud computing and web services, delivering custom web solutions.",
-      skills: ["CSS", "HTML5", "+1 skill"],
+      skills: ["CSS", "HTML5", "JavaScript"],
     },
   ];
 
@@ -69,7 +89,7 @@ export function Experience(): JSX.Element {
               <div className="body">
                 <p>{exp.description}</p>
                 {exp.skills && (
-                  <p>
+                  <p style={{ marginTop: "1rem", marginBottom: "1rem" }}>
                     <strong>Skills:</strong> {exp.skills.join(", ")}
                   </p>
                 )}

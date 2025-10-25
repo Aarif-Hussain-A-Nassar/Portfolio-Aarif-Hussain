@@ -55,12 +55,12 @@ export function About() {
           <p>
             You can also check out my work on{" "}
             <a
-              href="https://www.instagram.com/buil_dmybrand?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/twodotsofficial_/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "var(--green)", fontWeight: "bold" }}
             >
-              Build My Brand
+             Two Dots Official
             </a>
             .
           </p>

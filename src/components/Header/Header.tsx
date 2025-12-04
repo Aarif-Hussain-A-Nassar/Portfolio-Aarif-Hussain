@@ -58,7 +58,7 @@ export function Header() {
             Contact
           </NavHashLink>
           <a
-            href="https://drive.google.com/uc?export=download&id=1lJ44fQTdx2XF2ZoGFEHuBUcyWemKPSHP"
+            href="https://drive.google.com/file/d/156U-MKEgkojhXj-JCC5kH3KHstIlQLx7/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="button"

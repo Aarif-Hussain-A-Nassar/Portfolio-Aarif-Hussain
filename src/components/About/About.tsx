@@ -37,32 +37,26 @@ export function About() {
         >
           <p>
             Beyond coding, I'm a storyteller—through photography, videography,
-            and gaming. I also run a freelancing page where I design websites
-            and market products like{" "}
-            <a
-              href="https://www.instagram.com/cookinggrandma_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "var(--green)", fontWeight: "bold" }}
-            >
-              Cooking Grandma
-            </a>
-            .
+            and gaming. Creativity isn't just a hobby; it's a discipline I've
+            turned into a venture.
           </p>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <p>
-            You can also check out my work on{" "}
+            I co-founded{" "}
             <a
-              href="https://www.instagram.com/twodotsofficial_/"
+              href="https://two-dots-two.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "var(--green)", fontWeight: "bold" }}
             >
-             Two Dots Official
+              Two Dots
             </a>
-            .
+            {" "}— a creative design studio where we craft premium digital
+            experiences, brand identities, and architectural websites for
+            businesses that demand excellence. Think of it as where engineering
+            precision meets artistic vision.
           </p>
         </ScrollAnimation>
       </div>
